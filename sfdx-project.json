@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "source/omnistudio",
+      "default": true
+    }
+  ],
+  "name": "omnistudio-recipes",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0"
+}
