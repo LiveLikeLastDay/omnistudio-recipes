@@ -1,0 +1,27 @@
+:root{
+    /** button */
+    --sds-c-button-brand-color-background: #c20041;
+    /** checkbox color*/
+    --sds-c-checkbox-color-border: #3c4a60;
+    --sds-c-checkbox-color-border-checked: #c20041;
+    --sds-c-checkbox-color-background-checked: #fff;
+    --sds-c-checkbox-mark-color-foreground: #c20041;
+    --sds-c-checkbox-color-border-focus:#3c4a60;
+
+    /* * radio color */
+    --sds-c-radio-color-border: #3c4a60;
+    --sds-c-radio-color-border-checked: #c20041;
+    --sds-c-radio-color-background-checked: #fff;
+    --sds-c-radio-mark-color-foreground: #c20041;
+    --sds-c-radio-color-border-focus: #3c4a60;
+
+    /** textarea*/
+    --sds-c-textarea-color-border: #3c4a60;
+}
+
+/* OS Styles */
+.omniscript-article .omniscript-side-content {
+    background-color: #023B89;
+    color: white;
+    margin-top: 0;
+}
