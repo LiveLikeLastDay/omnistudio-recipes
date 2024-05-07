@@ -1,5 +1,7 @@
 # Salesforce OmniStudio(Vlocity) recipes
 
+[YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
+
 ## Collapse in FlexCard
 This [example](source/omnistudio/main/default/omniUiCard/CarSummary_ApexForcePtyLtd_1.ouc-meta.xml) shows how to collapse FlexCard just like OmniScript.
 
