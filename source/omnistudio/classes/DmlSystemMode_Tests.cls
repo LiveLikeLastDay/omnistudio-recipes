@@ -14,7 +14,10 @@ private class DmlSystemMode_Tests {
         // Assert that the record was inserted
         System.assertEquals(
             1,
-            [SELECT COUNT() FROM Account WHERE Id = :testAccount.Id]
+            [SELECT COUNT() FROM Account WHERE Id = :testAccount.Id],
+            'The account should be created.'
         );
     }
+
+    // todo: more unit test method to improve code coverage
 }
