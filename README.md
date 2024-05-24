@@ -1,6 +1,12 @@
 # Salesforce OmniStudio(Vlocity) recipes
 
-[YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
+-   [Collapse in FlexCard](#collapse-in-flexcard)
+-   [Use DataRaptor as FlexCard Data Source](#use-dataraptor-as-flexcard-data-source)
+-   [How to customize OmniStudio styles](#how-to-customize-omnistudio-styles)
+-   [OmniStudio DML Handler](#omnistudio-dml-handler)
+-   [Cache Block in Integration Procedure](#cache-block-in-integration-procedure)
+
+Please also check out [YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
 
 ## Collapse in FlexCard
 
@@ -33,3 +39,17 @@ It support dynamic fields and values.
 Please note this code gaves you idea how to do it, but it's not something ready to use in your production enviroment.
 
 ![CustomOmniStudioStyle](document/img/OmniStudioDmlHandler.png)
+
+## Cache Block in Integration Procedure
+
+Cache block can improve the performace a lot!
+
+![CacheBlock](document/img/CacheBlock.png)
+
+Please make sure ignoreCache is set to false before you preview.
+
+![CacheBlock-ignoreCache](document/img/CacheBlock-ignoreCache.png)
+
+You will notice the first time Execution Sequence has DRExtractContact, but not in second time.
+
+![CacheBlock-ExecutionSequence](document/img/CacheBlock-ExecutionSequence.png)
