@@ -1,7 +1,7 @@
 # Salesforce OmniStudio(Vlocity) recipes
 
 -   [Collapse in FlexCard](#collapse-in-flexcard)
--   [Use DataRaptor as FlexCard Data Source](#use-dataraptor-as-flexcard-data-source)
+-   [Use Data Mapper as FlexCard Data Source](#use-Data Mapper-as-flexcard-data-source)
 -   [How to customize OmniStudio styles](#how-to-customize-omnistudio-styles)
 -   [OmniStudio DML Handler](#omnistudio-dml-handler)
 -   [Cache Block in Integration Procedure](#cache-block-in-integration-procedure)
@@ -16,11 +16,11 @@ This can be useful if you use FlexCard in OmniScript as summary.
 
 ![FlexCard-CarSummary](document/img/FlexCard-CarSummary.png)
 
-## Use DataRaptor as FlexCard Data Source
+## Use Data Mapper as FlexCard Data Source
 
-This [sample](source/omnistudio/main/default/omniUiCard/DRAsDataSource_ApexForcePtyLtd_1.ouc-meta.xml) shows how to use DataRaptor as FlexCard Data Source, and filter by an input map.
+This [sample](source/omnistudio/main/default/omniUiCard/DRAsDataSource_ApexForcePtyLtd_1.ouc-meta.xml) shows how to use Data Mapper as FlexCard Data Source, and filter by an input map.
 
-![UseDataRaptorAsFlexCardDataSource](document/img/UseDataRaptorAsFlexCardDataSource.png)
+![UseData MapperAsFlexCardDataSource](document/img/UseData MapperAsFlexCardDataSource.png)
 
 ## How to customize OmniStudio styles
 
@@ -42,8 +42,9 @@ Please note this code gaves you idea how to do it, but it's not something ready 
 
 ## Cache Block in Integration Procedure
 
-Cache block can improve the performace a lot!
+Cache can improve the performace a lot!
 
+Cache Block in Integration Procedure
 ![CacheBlock](document/img/CacheBlock.png)
 
 Please make sure ignoreCache is set to false before you preview.
@@ -53,3 +54,5 @@ Please make sure ignoreCache is set to false before you preview.
 You will notice the first time Execution Sequence has DRExtractContact, but not in second time.
 
 ![CacheBlock-ExecutionSequence](document/img/CacheBlock-ExecutionSequence.png)
+
+Please ref https://help.salesforce.com/s/articleView?id=sf.os_cache_for_dataraptors_and_integration_procedures.htm&type=5 to clear cache.
