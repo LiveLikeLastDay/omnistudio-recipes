@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Convert OmniScript form data to case object</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;StepSearchRego&quot; : {
+    &quot;state&quot; : &quot;VIC&quot;,
+    &quot;rego&quot; : &quot;ABC123&quot;
+  },
+  &quot;StepDriverGender&quot; : {
+    &quot;gender&quot; : &quot;Male&quot;
+  },
+  &quot;StepDriverName&quot; : {
+    &quot;firstName&quot; : &quot;Felix&quot;,
+    &quot;lastName&quot; : &quot;Liu&quot;
+  },
+  &quot;StepQuote&quot; : {
+    &quot;excessFee&quot; : &quot;900&quot;
+  },
+  &quot;StepSummary&quot; : {
+    &quot;quotePrice&quot; : 986.79
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DMTQuoteFormToCase</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTQuoteFormToCaseCustom6090</globalKey>
+        <inputFieldName>formJSON</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted
+        >var:formData:StepSearchRego:rego &quot;(&quot; + var:formData:StepSearchRego:state + &quot;)/\/\/-/\/\/Quote/\/\/price:/\/\/$&quot; + var:formData:StepSummary:quotePrice + &quot;/\/\/-/\/\/&quot; + var:formData:StepDriverName:firstName + &quot;/\/\/&quot; + var:formData:StepDriverName:lastName +</formulaConverted>
+        <formulaExpression
+        >%formData:StepSearchRego:rego% + &quot;(&quot; + %formData:StepSearchRego:state% + &quot;) - Quote price: $&quot; + %formData:StepSummary:quotePrice% + &quot; - &quot; +
+%formData:StepDriverName:firstName% + &quot; &quot; +
+%formData:StepDriverName:lastName%</formulaExpression>
+        <formulaResultPath>subject</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DMTQuoteFormToCaseCustom7965</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:formData SERIALIZE</formulaConverted>
+        <formulaExpression>SERIALIZE(%formData%)</formulaExpression>
+        <formulaResultPath>formJSON</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DMTQuoteFormToCaseCustom9245</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTQuoteFormToCaseCustom8560</globalKey>
+        <inputFieldName>caseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTQuoteFormToCaseCustom8575</globalKey>
+        <inputFieldName>subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>subject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:formData:ContextId</formulaConverted>
+        <formulaExpression>%formData:ContextId%</formulaExpression>
+        <formulaResultPath>caseId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMTQuoteFormToCaseCustom9722</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTQuoteFormToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;formData&quot; : {
+    &quot;ContextId&quot; : &quot;500J4000001ScUDIA0&quot;,
+    &quot;StepSearchRego&quot; : {
+      &quot;state&quot; : &quot;VIC&quot;,
+      &quot;rego&quot; : &quot;TST123&quot;
+    },
+    &quot;StepDriverGender&quot; : {
+      &quot;gender&quot; : &quot;Male&quot;
+    },
+    &quot;StepDriverName&quot; : {
+      &quot;firstName&quot; : &quot;Felix&quot;,
+      &quot;lastName&quot; : &quot;Liu&quot;
+    },
+    &quot;StepQuote&quot; : {
+      &quot;excessFee&quot; : &quot;900&quot;
+    },
+    &quot;StepSummary&quot; : {
+      &quot;quotePrice&quot; : 986.79
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DMTQuoteFormToCase_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
