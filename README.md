@@ -1,10 +1,11 @@
 # Salesforce OmniStudio(Vlocity) recipes
 
 -   [Collapse in FlexCard](#collapse-in-flexcard)
--   [Use Data Mapper as FlexCard Data Source](#use-Data Mapper-as-flexcard-data-source)
+-   [Use Data Mapper as FlexCard Data Source](#use-data-mapper-as-flexcard-data-source)
 -   [How to customize OmniStudio styles](#how-to-customize-omnistudio-styles)
 -   [OmniStudio DML Handler](#omnistudio-dml-handler)
 -   [Cache Block in Integration Procedure](#cache-block-in-integration-procedure)
+-   [OmniStudio Car Insurance Quote](#omni-studio-car-insurance-quote)
 
 Please also check out [YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
 
@@ -56,3 +57,11 @@ You will notice the first time Execution Sequence has DRExtractContact, but not 
 ![CacheBlock-ExecutionSequence](document/img/CacheBlock-ExecutionSequence.png)
 
 Please ref https://help.salesforce.com/s/articleView?id=sf.os_cache_for_dataraptors_and_integration_procedures.htm&type=5 to clear cache.
+
+## OmniStudio Car Insurance Quote
+
+This is a very sample version of Car Insurance Quote build by OmniStudio(OmniScript, Integration Procedure and Data Mapper).
+
+You can find the code [here](source/omnistudio/main/default/omniScripts/ApexForcePtyLtd_CarInsuranceQuote_English_5.os-meta.xml)
+
+![MiniCarInsuranceQuote](document/img/MiniCarInsuranceQuote.png)
