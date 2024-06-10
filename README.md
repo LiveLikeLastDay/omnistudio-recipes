@@ -5,7 +5,8 @@
 -   [How to customize OmniStudio styles](#how-to-customize-omnistudio-styles)
 -   [OmniStudio DML Handler](#omnistudio-dml-handler)
 -   [Cache Block in Integration Procedure](#cache-block-in-integration-procedure)
--   [OmniStudio Car Insurance Quote](#omni-studio-car-insurance-quote)
+-   [OmniStudio Car Insurance Quote](#omnistudio-car-insurance-quote)
+-   [LWC for OmniScript sample ](#lwc-for-omniscript-sample)
 
 Please also check out [YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
 
@@ -65,3 +66,9 @@ This is a very sample version of Car Insurance Quote build by OmniStudio(OmniScr
 You can find the code [here](source/omnistudio/main/default/omniScripts/ApexForcePtyLtd_CarInsuranceQuote_English_5.os-meta.xml)
 
 ![MiniCarInsuranceQuote](document/img/MiniCarInsuranceQuote.png)
+
+## LWC for OmniScript sample
+
+This is a [sample LWC](source/omnistudio/main/default/lwc/omniUpperCaseText/omniUpperCaseText.js) that demonstrates how to interact with OmniScript, such as loading and saving JSON data.
+
+![lwcForOmniScript](document/img/lwcForOmniScript.png)
