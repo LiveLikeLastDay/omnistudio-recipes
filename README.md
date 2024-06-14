@@ -7,6 +7,7 @@
 -   [Cache Block in Integration Procedure](#cache-block-in-integration-procedure)
 -   [OmniStudio Car Insurance Quote](#omnistudio-car-insurance-quote)
 -   [LWC for OmniScript sample ](#lwc-for-omniscript-sample)
+-   [Show error message in OmniScript if IP failed](#show-error-message-in-omniscript-if-ip-failed)
 
 Please also check out [YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
 
@@ -72,3 +73,9 @@ You can find the code [here](source/omnistudio/main/default/omniScripts/ApexForc
 This is a [sample LWC](source/omnistudio/main/default/lwc/omniUpperCaseText/omniUpperCaseText.js) that demonstrates how to interact with OmniScript, such as loading and saving JSON data.
 
 ![lwcForOmniScript](document/img/lwcForOmniScript.png)
+
+## Show error message in OmniScript if IP failed
+
+This [OmniScript](source/omnistudio/main/default/omniScripts/ApexForcePtyLtd_CarInsurancePayment_English_1.os-meta.xml) shows that how to display error message from IP after click Next button.
+
+![paymentError](document/img/paymentError.png)
