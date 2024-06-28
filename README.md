@@ -79,3 +79,10 @@ This is a [sample LWC](source/omnistudio/main/default/lwc/omniUpperCaseText/omni
 This [OmniScript](source/omnistudio/main/default/omniScripts/ApexForcePtyLtd_CarInsurancePayment_English_1.os-meta.xml) shows that how to display error message from IP after click Next button.
 
 ![paymentError](document/img/paymentError.png)
+
+## Group a list/array by one of the item attributes
+This [Integration Procedure] (source/omnistudio/datapacks/IPGetAccountGroups.json) demonstrates how a list/array can be grouped by one of the item attributes. 
+It generates a list of groups, group by the attribute value, and each group contains a list/array of items which shares the same attribute value.
+
+<img width="693" alt="image" src="https://github.com/jasong327/omnistudio-recipes/assets/6101374/996a7975-cc40-4dad-9b64-f896208e1d4a">
+
