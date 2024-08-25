@@ -11,6 +11,12 @@
 
 Please also check out [YouTube playlist](https://www.youtube.com/playlist?list=PL_7QTUl9lWwCE2_t-HGSKiaBBgbDdrLys) for some of recipes listed here.
 
+## Helpful Links
+
+[OmniStudio Exercise Guides](https://trailhead.salesforce.com/trailblazer-community/feed/0D54S00000C5XMGSA3)
+
+[2021 OmniStudio Documentation](https://drive.google.com/file/d/1-mIX4lrMWwDHCqgOuTqztvrbPj-2dfzo/view)
+
 ## Collapse in FlexCard
 
 This [sample](source/omnistudio/main/default/omniUiCard/CarSummary_ApexForcePtyLtd_1.ouc-meta.xml) shows how to collapse whole FlexCard using the 'set value' action.
@@ -81,8 +87,8 @@ This [OmniScript](source/omnistudio/main/default/omniScripts/ApexForcePtyLtd_Car
 ![paymentError](document/img/paymentError.png)
 
 ## Group a list/array by one of the item attributes
-This [Integration Procedure] (source/omnistudio/datapacks/IPGetAccountGroups.json) demonstrates how a list/array can be grouped by one of the item attributes. 
+
+This [Integration Procedure] (source/omnistudio/datapacks/IPGetAccountGroups.json) demonstrates how a list/array can be grouped by one of the item attributes.
 It generates a list of groups, group by the attribute value, and each group contains a list/array of items which shares the same attribute value.
 
 <img width="693" alt="image" src="https://github.com/jasong327/omnistudio-recipes/assets/6101374/996a7975-cc40-4dad-9b64-f896208e1d4a">
-
