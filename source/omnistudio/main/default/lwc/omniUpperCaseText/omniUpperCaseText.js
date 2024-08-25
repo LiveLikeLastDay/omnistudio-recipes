@@ -1,3 +1,7 @@
+/*************************************************************************************************
+ * This file is part of the Omnistudio-recipes project, released under the MIT License.
+ * See LICENSE file or go to https://github.com/LiveLikeLastDay/omnistudio-recipes for full license details.
+ ************************************************************************************************/
 import { LightningElement, api } from "lwc";
 import { OmniscriptBaseMixin } from "omnistudio/omniscriptBaseMixin";
 
