@@ -7,18 +7,18 @@ https://help.salesforce.com/s/articleView?id=sf.os_close_a_flexcard_flyout_modal
 
 - Create a child FlexCard
 
-![Create a child FlexCard](document/example/closeFlyoutModal/CreateChildFlexCard.png)
+![Create a child FlexCard](example/closeFlyoutModal/CreateChildFlexCard.png)
 - Add an Action Button into the child FlexCard, and active
     - Action Type: Event
     - Event Type: PubSub
     - Event Name: close_modal
     - Event Name: close
 
-![Add an Action Button into the child FlexCard](document/example/closeFlyoutModal/AddActionButtonIntoChildFlexCard.png)
+![Add an Action Button into the child FlexCard](example/closeFlyoutModal/AddActionButtonIntoChildFlexCard.png)
 
 - Create a parent FlexCard
 
-![Create a parent FlexCard](document/example/closeFlyoutModal/CreateParentFlexCard.png)
+![Create a parent FlexCard](example/closeFlyoutModal/CreateParentFlexCard.png)
 
 - Add an Action Button into the child FlexCard, and active
     - Action Type: Flyout
@@ -27,11 +27,11 @@ https://help.salesforce.com/s/articleView?id=sf.os_close_a_flexcard_flyout_modal
     - Channel Name: close_modal (same as the Event Name in the child FlexCard)
 
 
-![Add an Action Button into the parent FlexCard](document/example/closeFlyoutModal/AddActionButtonIntoParentFlexCard.png)
+![Add an Action Button into the parent FlexCard](example/closeFlyoutModal/AddActionButtonIntoParentFlexCard.png)
 
 - Preview the parent FlexCard, and click the "View Detail" Button
 
-![Preview the parent FlexCard](document/example/closeFlyoutModal/PreviewTheParent.png)
+![Preview the parent FlexCard](example/closeFlyoutModal/PreviewTheParent.png)
 
     - The child FlexCard will be opened
     - Click the "Close" Button in the child FlexCard
